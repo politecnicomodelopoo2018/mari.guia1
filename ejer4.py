@@ -5,10 +5,10 @@ class Empleado (object):
     fecha_nac=None
 
     def  __init__(self):
-        self.dias_que_debe_ir=[]
+        self.dias_que_debe_ir = [False, True, True, True, True, True, False]
 
     def __init__(self):
-        self.dias_concurridos=[]
+        self.dias_concurridos= []
 
     def AgregarNombre (self,nombre):
         set.nombre=nombre
@@ -27,8 +27,25 @@ class Empleado (object):
             if dias_que_debe_ir[item] == True:
                 self.dias_concurridos.append(dias_que_debe_ir)
 
-
     def DiasQueDebeir (self):
+        self.dias_que_debe_ir = [False,True,True,True,True,True,False]
+
+    def Porcentaje (self):
+        suma=0
+        for a in self.dias_concurridos:
+            suma+=a
+            return (suma*100)/30
+
+
+
+
+
+
+
+
+
+
+
 
 
 
