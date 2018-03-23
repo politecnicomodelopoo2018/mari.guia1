@@ -14,7 +14,8 @@ empleado.apellido=input ("ingrese apellido ")
 empleado.telefono= input ("ingrese telefono ")
 empleado.fecha_nac= datetime.date(2000,10,23)
 por = empleado.Porcentaje()
-print(por)
+print(empleado.Porcentaje(2018,3,2))
+print(a.)
 
 
 
