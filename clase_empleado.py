@@ -22,4 +22,5 @@ class Empresa(object):
                 return item
         return None
 
-    def porcentaje
+
+
