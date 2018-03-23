@@ -32,9 +32,14 @@ class Empleado (object):
 
     def Porcentaje (self):
         suma=0
-        for a in self.dias_concurridos:
-            suma+=a
-            return (suma*100)/30
+        for item in self.empleados:
+            suma+=item.porcentaje(año,mes)
+        return suma/len(self.empleados)
+
+
+
+
+
 
 
 
